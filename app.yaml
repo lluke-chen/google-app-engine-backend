@@ -1,0 +1,13 @@
+runtime: python37
+service: api
+
+beta_settings:
+    cloud_sql_instances: 'valued-etching-380113:europe-west1:db-assignment-part1'
+
+automatic_scaling:
+    min_instances: 5
+    max_instances: 15
+
+handlers:
+    - url: /.*
+      script: auto
