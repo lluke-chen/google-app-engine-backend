@@ -5,8 +5,8 @@ import mysql.connector
 
 app = Flask(__name__)
 
-DB_USER = "db-assignment-part1"
-DB_PASSWORD = "D7xo/x,qx3NX;E9>"
+DB_USER = "master"
+DB_PASSWORD = "test123"
 DB_NAME = "db-random-numbers"
 CLOUD_SQL_CONNECTION_NAME = "valued-etching-380113:europe-west1:db-assignment-part1"
 
