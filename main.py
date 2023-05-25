@@ -71,9 +71,11 @@ def get_results():
         result_set = cursor.fetchall()
 
         # HTML table
-        table = "<table><tr><th>Instance</th><th>Numbers generated</th></tr>"
+        table = "<table><tr><th>Order</th><th>Instance</th><th>Numbers generated</th></tr>"
+        count = 1
         for row in result_set:
-            table += f"<tr><td>{row[0]}</td><td style='text-align: center'>{row[1]}</td></tr>"
+            table += f"<tr><td>{count}</td><td>{row[0]}</td><td style='text-align: center'>{row[1]}</td></tr>"
+            count += 1
         table += "</table>"
 
     conn.close()
