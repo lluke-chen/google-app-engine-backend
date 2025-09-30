@@ -4,5 +4,5 @@ itsdangerous==2.2.0
 jinja2==3.1.6
 markupsafe==3.0.2
 mysql-connector-python==9.1.0
-protobuf==5.29.2
+protobuf==5.29.5
 werkzeug==3.1.3
